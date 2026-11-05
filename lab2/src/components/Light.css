@@ -1,0 +1,38 @@
+.light {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #1c1c1e;
+  cursor: pointer;
+  opacity: 0.35;
+  filter: grayscale(40%);
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.15s ease, box-shadow 0.3s ease;
+}
+
+.light:hover {
+  opacity: 0.6;
+}
+
+.light:active {
+  transform: scale(0.95);
+}
+
+.light--active {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.light--red.light--active {
+  background-color: #ff3b30;
+  box-shadow: 0 0 16px rgba(255, 59, 48, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.light--yellow.light--active {
+  background-color: #ffcc00;
+  box-shadow: 0 0 16px rgba(255, 204, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.light--green.light--active {
+  background-color: #34c759;
+  box-shadow: 0 0 16px rgba(52, 199, 89, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
